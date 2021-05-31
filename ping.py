@@ -28,9 +28,8 @@ while(1):
   #print(output)
   
   if(output.find("Risposta da "+ip)==-1):
-    ##url=link+"Ping OK da "+ip
- ## else:
     url=link+"PC "+ip+"Non Risponde"
-  requests.get(url)     
+    requests.get(url)     
+  
   time.sleep(10)
 
