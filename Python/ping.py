@@ -17,6 +17,7 @@ if(len(sys.argv)==1):
   print("Using Default IP " + ip)
 else:  
   ip=sys.argv[1]
+  print("I am using Ip "+ip)
 
 while(1):
   output = subprocess.check_output(["ping.exe","-n","1",ip], stdin =subprocess.PIPE,
@@ -25,10 +26,9 @@ while(1):
                                   )
                            
 
-  #print(output)
   
   if(output.find("Risposta da "+ip)==-1):
-    url=link+"PC "+ip+"Non Risponde"
+    url=link+"PC "+ip+" Non Risponde"
     requests.get(url)     
   
   time.sleep(10)
