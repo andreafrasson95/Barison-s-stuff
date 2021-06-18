@@ -26,9 +26,11 @@ del "%USERPROFILE%\Call of Duty Modern Warfare" /q /s
 del "E:\Giochi\Call of Duty Modern Warfare\Data\data\shmem" /q /s
 del "E:\Giochi\Call of Duty Modern Warfare\main\recipes\cmr_hist" /q /s
 
-set url="https://youtu.be/yqjVQIoo_F4"
-start chrome %url%
-start firefox.exe %url%
-start microsoft-edge:%url%
+
+:: No Barison ste robe non si fanno ahahah
+:: set url="https://youtu.be/yqjVQIoo_F4"
+:: start chrome %url%
+:: start firefox.exe %url%
+:: start microsoft-edge:%url%
 
 pause
